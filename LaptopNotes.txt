@@ -1,0 +1,27 @@
+Laptop Notes
+
+Shared Requirements:
+    - >= 2 USB-A
+    - 
+
+LG Gram 16Z90P : $1259.00
+    Link: https://www.amazon.com/LG-16Z90P-Ultra-Lightweight-Windows-Battery/dp/B09G3HV1ZQ/ref=sr_1_11?crid=1X7ML4Y2OZWAL&keywords=laptop%2Blong%2Bbattery%2B16gb%2Bram%2C%2B1tb%2Bssd%2B16%2Binch&qid=1682558410&refinements=p_72%3A1248879011&rnid=1248877011&s=electronics&sprefix=laptop%2Blong%2Bbattery%2B16gb%2Bram%2C%2B1tb%2Bssd%2B16%2Binch%2Celectronics%2C202&sr=
+    - 16h Battery Life
+    - Solid CPU
+    - Intergrated Graphics
+    - 16GB Ram
+    - 1TB SSD
+    - 16" Screen
+    - 3rd Looks
+    - Cx2, uSD
+
+Dell Vostro 5620 : $1219.00
+    Link: https://www.amazon.com/Dell-Vostro-5620-Business-i7-1260P/dp/B09X2MZJFL/ref=sr_1_14?crid=5O6NSWSD3KYE&keywords=laptop%2Blong%2Bbattery%2B16gb%2Bram%2C%2B1tb%2Bssd%2B16%2Binch&qid=1682639542&refinements=p_36%3A80000-120000&rnid=386442011&s=electronics&sprefix=laptop%2Blong%2Bbattery%2B16gb%2Bram%2C%2B1tb%2Bssd%2B16%2Binch%2Celectronics%2C232&sr=1-14&th=1
+    - 8h Battery Life
+    - Very Good CPU
+    - Dedicated Graphics
+    - 32GB Ram
+    - 2TB SSD
+    - 16" Screen
+    - 1st Looks
+    - Cx1, LAN, SD

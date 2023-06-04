@@ -1,0 +1,16 @@
+Project Ideas
+
+Done
+    - Magic Eight Ball
+    - Vending
+Working On
+    - Password Generator
+    - Dice Rolling Simulator
+To-Do
+    - Rock Paper Scissors
+    - Guessing Game
+    - Simple Calculator
+    - Countdown Timer
+    - Tic Tac Toe
+    - Hangman
+    - Sorting Algorithim
