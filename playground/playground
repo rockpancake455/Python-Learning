@@ -7,9 +7,22 @@ from time import *
     #print (f"{letter.ljust(15)} is {lettering}")
 
 
-print("start of program")
-for i in range(1,4):
-    sleep(1)
-    print (i)
+
+print("start of program\n")
+
+while True:
+
+        try:
+               useranwer = input("do you like cake?\n[yes or no]")
+               if useranwer =="no":
+                    print("you dont like cake")
+                    break
+               elif useranwer == "yes":
+                    print("you do like cake")
+                    break
+               else:
+                    print("error invalid answer")
+        except:
+               print("error invalid answer")
 
 print ("end of program")
