@@ -1,15 +1,28 @@
-from time import *
-#letters=["a","b","c","d","e","f"]
-#dictionary = {"a": 1.1,"b":2.2,"c":3.3,"d":4.4,"e":5.5,"f":6.6}
+from random import randint
+play = True
+while play == True:
 
-#for letter in letters:
-    #lettering = str(dictionary[letter])
-    #print (f"{letter.ljust(15)} is {lettering}")
+    wallet = 100 #coins
+    teminalInput =input("your commands options gamble,slotand cards what cammand you want to do? ")
 
+    slot1 = randint(1,100)
+    slot2 = randint(1,100)
+    slot3 = randint(1,100)
+    sum = slot1 + slot2 + slot3
+    wallet = wallet + sum
+    if teminalInput == "gamble":
+        int(gambleinput =input("how much coins do you want to bet on"))
+        gamble = randint(1,100)
+        if gamble <= int(gambleinput) :
+            print("you win the gamble")
+        elif gamble >= gambleinput:
+            print(f"oops! you lost your bet")
+            wallet = wallet - gambleinput
+        
+    elif teminalInput == "slot":
+        print(f"you got a {slot1}-{slot2} and {slot3} \nin total you earned {sum}")
+        wallet = wallet + sum
+    elif teminalInput == "cards":
+        pass
 
-print("start of program")
-for i in range(1,4):
-    sleep(1)
-    print (i)
-
-print ("end of program")
+    print (wallet)
