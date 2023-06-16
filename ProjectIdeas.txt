@@ -3,6 +3,7 @@ Project Ideas
 Done
     - Magic Eight Ball
     - Vending
+    - BankAccount
 Working On
     - Password Generator
     - Dice Rolling Simulator
