@@ -1,0 +1,33 @@
+from random import randint
+import CasinoGames
+from time import sleep
+sleep(1)
+
+wallet = 100 #coins
+play = "Yes"
+
+def GetUserAnswer(message: str, validAnswers: list, castType: type):
+    while True:
+        try:
+            userInput = castType(input(message))
+            if (userInput in validAnswers):
+                break
+            else:
+                print(f"Error: Invalid Answer!")
+        except:
+            print(f"Error: Invalid Answer!")
+    return userInput
+
+while play.upper() in ["YES","Y"]:
+    
+    msg = "Hello!\nWelcome to Jacob's Casino of DOOM!\nWhat do you want to play?\n[1]: Slots\n[2]: Chicken\n"
+    gameSelection = GetUserAnswer(msg, [1,2], int)
+    
+    if gameSelection == 1: #Slots
+        CasinoGames.Slots()
+    elif gameSelection == 2: #Chicken
+        CasinoGames.Chicken()
+
+    play = GetUserAnswer("Do you want to keep on playing?\n[Yes,No]", ["Yes","yes","Y","y","No","no","N","n"], str)
+
+print("end of program")
