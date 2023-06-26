@@ -1,5 +1,6 @@
 from random import randint
 from time import sleep
+import UserInput
 
 # 
 # Make a list of symbols (BAR, cherry, lollypop, etc...)
@@ -63,4 +64,23 @@ def Slots(wallet: int):
 #           Check user input for garbage. -> Use GetUserAnswer() method.
 # 
 def Chicken(wallet: int):
-    print("Playing Chicken")
+    winning = 0
+
+    while wallet > 0:
+        
+        msg = "please enter a bet from 1 to 100"
+        getBet = UserInput.getUserRange(msg,int)
+
+        randomBet = randint(1,100)
+
+        if getBet < randomBet:
+            print("you win the bet congratulations")
+            wallet += getBet + randomBet
+        elif getBet > randomBet:
+            print("oops! you lost your bet better luck next time\ntry again")
+            wallet -= getBet
+            
+        print(f"you now have {wallet} coins in your wallet now!\n")
+
+    print("End of Chicken")
+    return wallet

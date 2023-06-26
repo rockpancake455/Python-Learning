@@ -16,6 +16,7 @@ while play.upper() in ["YES","Y"]:
         wallet = CasinoGames.Slots(wallet)
     elif gameSelection == 2: #Chicken
         wallet = CasinoGames.Chicken(wallet)
+    # cards like War?
 
     play = UserInput.GetUserAnswer("Do you want to play another game?\n[Yes,No]", ["Yes","yes","Y","y","No","no","N","n"], str)
 
