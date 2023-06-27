@@ -68,15 +68,15 @@ def Chicken(wallet: int):
 
     while wallet > 0:
         
-        msg = "please enter a bet from 1 to 100"
+        msg = "please enter a bet from 1 to 100\n Or press [E] to exit"
         getBet = UserInput.getUserRange(msg,int)
-
+        
         randomBet = randint(1,100)
 
-        if getBet < randomBet:
+        if getBet > randomBet:
             print("you win the bet congratulations")
             wallet += getBet + randomBet
-        elif getBet > randomBet:
+        elif getBet < randomBet:
             print("oops! you lost your bet better luck next time\ntry again")
             wallet -= getBet
             
