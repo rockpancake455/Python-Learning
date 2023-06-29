@@ -54,33 +54,55 @@ def Slots(wallet: int):
 # 
 # Chicken:  The computer will generate a random number from 1-100.
 #           The user will enter a number that they want to bet.
-#           If the user's number is < the random number they win and double the money they bet.
+#           If the user's number is <= the random number they win and double the money they bet.
 #           If the user's number is > the random number they lose and lose the money they bet.
 #           
 # Other Goals:
 #           Use the wallet and keep track of how much money the players has.
-#           Don't allow the user to bet more than they have.
+#           Don't allow the user to bet more than they have. <To-Do>
 #           Don't allow the user to bet more than 100 coins and less than 1 coin.
 #           Check user input for garbage. -> Use GetUserAnswer() method.
-# 
+#           Kick the user out when the user bets "1-4" three times in a row.
+#           Kick the user out when the user bets "1-4" more than 1/3 (33%) of the time.
+#           Allow the user to exit by entering "E" into the terminal. <To-Do>
+#
+
 def Chicken(wallet: int):
-    winning = 0
+    
+    repeatLowBetCount: int = 0
+    totalGuesses: int = 0
+    totalLowGuesses: int = 0
 
     while wallet > 0:
-        
-        msg = "please enter a bet from 1 to 100\n Or press [E] to exit"
-        getBet = UserInput.getUserRange(msg,int)
-        
+    
+        msg = "Please enter a bet from 1 to 100.\nor you can leave by entering [E]"
+        userBet = UserInput.GetUserRange(msg, range(1,101), int)
         randomBet = randint(1,100)
+        totalGuesses += 1
 
-        if getBet > randomBet:
-            print("you win the bet congratulations")
-            wallet += getBet + randomBet
-        elif getBet < randomBet:
-            print("oops! you lost your bet better luck next time\ntry again")
-            wallet -= getBet
+        if userBet in range(1,5):
+            totalLowGuesses += 1
+            repeatLowBetCount += 1
+        else:
+            repeatLowBetCount = 0
+
+        if repeatLowBetCount >= 3 or (totalLowGuesses / totalGuesses) > 0.33 and totalGuesses > 10:
+            print("Hey!\nYour cheating!\nGet out of here!!")
+            break
+
+        print(f"Your Bet: {userBet}")
+        sleep(1)
+        print(f"House Bet: {randomBet}")
+        sleep(1)
             
-        print(f"you now have {wallet} coins in your wallet now!\n")
+        if userBet <= randomBet:
+            print("\nYou Win!\nCongratulations!!!")
+            wallet += userBet + userBet
+        elif userBet > randomBet:
+            print("\noops!\nYou lost your bet!\nBetter luck next time!")
+            wallet -= userBet
+            
+        print(f"You now have {wallet} coins in your wallet!")
 
     print("End of Chicken")
     return wallet

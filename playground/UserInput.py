@@ -10,15 +10,14 @@ def GetUserAnswer(message: str, validAnswers: list, castType: type):
             print(f"Error: Invalid Answer!")
     return userInput
 
-def getUserRange(message: str, type2: type):
+def GetUserRange(message: str, validRange: range, castType: type):
     while True:
         try:
-            userInput = type2(input(message))
-            if(userInput in range(1,101)):
+            userInput = castType(input(message))
+            if(userInput in validRange):
                 break
             else:
                 print(f"Error: Invalid Answer!")
-
         except:
             print(f"Error: Invalid Answer!")
     return userInput
