@@ -59,12 +59,12 @@ def Slots(wallet: int):
 #           
 # Other Goals:
 #           Use the wallet and keep track of how much money the players has.
-#           Don't allow the user to bet more than they have. <To-Do>
+#           Don't allow the user to bet more than they have.
 #           Don't allow the user to bet more than 100 coins and less than 1 coin.
 #           Check user input for garbage. -> Use GetUserAnswer() method.
 #           Kick the user out when the user bets "1-4" three times in a row.
 #           Kick the user out when the user bets "1-4" more than 1/3 (33%) of the time.
-#           Allow the user to exit by entering "E" into the terminal. <To-Do>
+#           Allow the user to exit by entering "E" into the terminal.
 #
 
 def Chicken(wallet: int):
@@ -76,13 +76,15 @@ def Chicken(wallet: int):
     while wallet > 0:
     
         msg = "Please enter a bet from 1 to 100.\nor you can leave by entering [E]"
-        userBet = UserInput.GetUserRange(msg, range(1,101), int)
+        userBet = UserInput.GetUserRangeWithExit(msg, range(1,wallet), int)
         randomBet = randint(1,100)
         totalGuesses += 1
 
         if userBet in range(1,5):
             totalLowGuesses += 1
             repeatLowBetCount += 1
+        elif userBet.lower() == "e":
+            break
         else:
             repeatLowBetCount = 0
 
