@@ -6,9 +6,9 @@ Done
     - BankAccount
     - Dice Rolling Simulator
 Working On
-    - Password Generator
-    txt based aventure Game
+    - Text based aventure game
 To-Do
+    - Password Generator
     - Rock Paper Scissors
     - Guessing Game
     - Simple Calculator
@@ -16,4 +16,3 @@ To-Do
     - Tic Tac Toe
     - Hangman
     - Sorting Algorithim
-    - txt based aventure Game
