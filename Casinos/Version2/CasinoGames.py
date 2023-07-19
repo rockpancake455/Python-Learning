@@ -12,7 +12,7 @@ from time import sleep
 # if get a BAR then you automatically lose.
 # 
 def Slots(wallet: int):
-    symbols = ["Orange","Cherry","BAR","Star","Bell","Soda"]
+    symbols = ["Orange","Cherry","BAR","Star","Bell","Soda","tucker hat","game controller"]
     winnings = 0 
     
     while wallet > 10:        
@@ -76,7 +76,7 @@ def Chicken(wallet: int):
     while wallet > 0:
         # Gets the user's bet and generates the house's bet.
         msg = (f"Please enter a bet from 1 to {wallet}.")
-        userBet = QueryNumber(msg, 0, wallet, True)
+        userBet = QueryNumber(msg, 0, wallet, False)
         houseBet = randint(1,100)
         if userBet == "e":
             break
@@ -124,7 +124,39 @@ def Chicken(wallet: int):
 # Allow the user to exit either on the red/black pick or at the end.
 # 
 def Roulette(wallet: int):
+
+    wheelcolor = ["Red","Black"]
     
+    while wallet > 0:
+        
+        #Gets the user's guess and bet and wheels color
+        usercolor = SelectFromList("What color will it land on?",["Red","Black"])
+        wheelspin = (wheelcolor[randint(0,1)])
+        msg = (f"And how mutch will you bet on from 10-{wallet}?")
+        userbet = QueryNumber(msg, 10, wallet, True)
     
+        #Spins the wheel
+        PrintTerm("The dealer is spinning the wheel!")
+        for i in range(1,5):
+            sleep(1)
+            PrintTerm(".")
     
+        PrintTerm(f"The ball landed on {wheelspin}!")
+        PressToContinue()
+
+        #Checks if you win or loose
+        if usercolor == wheelspin:
+            PrintBold("Hooray, you guessed correctly!")
+            wallet += userbet
+        else:
+            PrintBold("Oops!,better luck next time.")
+            wallet -= userbet
+
+        PrintTerm(f"You now have {wallet} in your wallet.")
+        PressToContinue()
+
+        if SelectFromList("Do you want to leave Roulette?", ["Yes","No"]) == "Yes":
+            break                                      
+
+    PrintTerm("End of Roulette")
     return wallet
