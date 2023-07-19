@@ -4,9 +4,10 @@ Done
     - Magic Eight Ball
     - Vending
     - BankAccount
+    - Dice Rolling Simulator
 Working On
     - Password Generator
-    - Dice Rolling Simulator
+    txt based aventure Game
 To-Do
     - Rock Paper Scissors
     - Guessing Game
@@ -15,3 +16,4 @@ To-Do
     - Tic Tac Toe
     - Hangman
     - Sorting Algorithim
+    - txt based aventure Game
