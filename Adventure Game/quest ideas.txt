@@ -1,0 +1,9 @@
+ "Guardians of the Caravan," you embark on a perilous journey as a valiant knight tasked with protecting a valuable merchant caravan from 
+ relentless bandits. As the caravan winds through treacherous terrains and haunted forests the next thing you see is random figurs 
+ blocking your path they demand you to surrender the caravan or get the blade but you and others says "no, this is all fot the great king" 
+ the bandits drawed their swards and some spawned from the wood out of nowhere your caravan defended the bandits off and diliverd caravan to its destination 
+ safely"
+
+ outcome, - 0 health, 4 bread, 30 coin, 3 iron
+
+ 
