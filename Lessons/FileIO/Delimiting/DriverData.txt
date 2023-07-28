@@ -1,0 +1,15 @@
+John Smith,Toyota,Supra,2019,Blue
+Emily Johnson,Honda,NSX,2020,Red
+Michael Davis,Ford,GT,2018,Black
+Sarah Wilson,Chevrolet,Corvette,2017,Silver
+David Thompson,BMW,M4,2021,White
+Amanda Martinez,Mercedes-Benz,AMG GT,2016,Gray
+Christopher Anderson,Audi,R8,2019,Black
+Samantha Taylor,Volkswagen,Golf R,2022,Red
+Matthew Clark,Tesla,Model S,2023,Blue
+Olivia Lewis,Nissan,GT-R,2017,Silver
+Andrew Turner,Hyundai,Veloster N,2020,White
+Emma Walker,Subaru,WRX STI,2018,Black
+Nathan Hernandez,Mazda,MX-5 Miata,2021,Red
+Isabella Young,Kia,Stinger,2019,Green
+William Hill,Lexus,LC,2022,Gray
