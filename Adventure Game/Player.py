@@ -9,8 +9,11 @@ class Player:
 
     @Health.setter
     def Health(self, value: int):
+        # Constrains health to be within min & max
         if value > self.__maxHealth:
             value = self.__maxHealth
+        if value < 0:
+            value = 0
         self.__health = value
 
     def Heal_Max(self):

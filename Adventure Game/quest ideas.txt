@@ -1,9 +1,29 @@
- "Guardians of the Caravan," you embark on a perilous journey as a valiant knight tasked with protecting a valuable merchant caravan from 
+                                                    Beggining game quest
+
+Guardians of the Caravan
+ 
+    you embark on a perilous journey as a valiant knight tasked with protecting a valuable merchant caravan from 
  relentless bandits. As the caravan winds through treacherous terrains and haunted forests the next thing you see is random figurs 
  blocking your path they demand you to surrender the caravan or get the blade but you and others says "no, this is all fot the great king" 
  the bandits drawed their swards and some spawned from the wood out of nowhere your caravan defended the bandits off and diliverd caravan to its destination 
- safely"
+ safely and was prised with ,30 coins,and 4 bars of iron"
 
- outcome, - 0 health, 4 bread, 30 coin, 3 iron
+ outcome, - 0 health,+ 30 coin,+ 4 iron
 
- 
+ _____________________________________________________________________________________________________________________________________________
+
+                                                End game quest
+   
+    In the realm of heroes, the noble King summoned you for an epic quest. Our mission: so you setted off on your mission after a few days of finding 
+you stumbled apon a cave that leads to nest of larg eggs you ponderd on why they're so big and came to conclusion of dragon eggs at the sametime a
+large beast walks in and waves one of its wing's and toples you over and then spews fire from its mouth but missed entirely, you charge at the 
+mysterious dragon you bash and slash then got kicked and hit the ground - 10 health, you thew a smoke bomb and blinded the dragon you climbed 
+on to the dragon and stabed the dragon on the neck while succsesfuly in the action of stabing the beast and it flung you to the air for 3 seconds
+and smahing to the ground hard -25 health and breaking your helmet you stood up walked up to the dead dragon pulled your sward and cut off the head
+and returned to the king to show proof, when you returned you showed the head to the king and then silice before clapes started and you were rewarded
+4 glass bottles,70 coins, 5 pices of wood and iron,
+
+outcome, - 35 health,- 1 helmet,+ 4 glass bottles,+ 70 coins,+ 5 wood and iron,
+
+_____________________________________________________________________________________________________________________________________________
+

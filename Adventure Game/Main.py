@@ -1,5 +1,5 @@
 from random import randint
-import PythonUI, blessed, GameMenus, Player, MailBox, time, os
+import PythonUI, blessed, GameMenus, Player, MailBox, time, Questing, os
 # from Player import Instance
 PythonUI.ConfigureTerminal(blessed.Terminal())
 time.sleep(1)
@@ -13,28 +13,26 @@ Turn based combat
 Chance based attacks
 Player skills
 """
-MailBox.MailBox.append(MailBox.Letter("Guardians of the Caravan","Hello good sir I would like you to join our caravan to transport\n some goods to the noble king and if you acssept ill gift you 50 coin for your protispation", "Lord Cedric Ironhelm"))
-MailBox.MailBox.append(MailBox.Letter("The Golden Griffin", "Hello adventurer!\nHave you heard of the lost golden Griffin?", "Jacob Herndon"))
-MailBox.MailBox.append(MailBox.Letter("The Golden Griffin", "Hello adventurer!\nHave you heard of the lost golden Griffin?", "Jacob Herndon"))
+
+
+caravanQuest = Questing.Quest("Guardians of the Caravan", [Questing.Reward(Questing.ResourceNames.Coins, 300)], Questing.CaravanGuard)
+MailBox.MailBox.append(MailBox.Letter("Guardians of the Caravan", "Hello good sir, I would like you to join our caravan to transport\n some goods to the noble king. If you join us,\n you will be gifted 300 coins for your protection.", "Mr.Vanguard", caravanQuest))
 
 while True: 
-    playerAction = GameMenus.Home()
+    playerAction = GameMenus.HomeMenu()
 
     # Craft
     # Check Mail
     # Go on Quest
     # Rest - Done3
 
-    # if player action is Check mail
-    # - Check the mailbox -> GameMenus menu
+    #plays any action the player wants to run
     if playerAction == GameMenus.HomeActions.Rest:
-        GameMenus.Rest()
+        GameMenus.RestMenu()
     if playerAction == GameMenus.HomeActions.Mail:
-        GameMenus.Mail()
-
-        
-        
-
+        GameMenus.MailMenu()
+    if playerAction == GameMenus.HomeActions.Quest:
+        GameMenus.QuestMenu()
 
 PythonUI.PrintBold("[END OF GAME]")
 PythonUI.PressToContinue()
