@@ -116,20 +116,22 @@ def CaravanGuard():
     PythonUI.ClearTerm()
     # checks users anwser
     path = PythonUI.SelectFromList("What path do you take?", ["Left","Right"])
-
-    if path == "Left":
-        LeftPath()
-    elif path == "Right":
-        RightPath()
     
-    if LeftPath() == False:
-        print("Death Screen")
-    else:
-        print("you eventually the path came together and that path leaded up to Le'mans\n +300 Coins, +20 Food, +30 Representation, +10 Iron ")
-
-    if RightPath() == False:
-        print("Death Screen")
-    else:
-        print("you eventually the path cam together and path leaded up to Le'mans\n +300 Coins, +20 Food, +30 Representation, +10 Iron ")
+    results = bool
+    
+    # playes the Quest
+    if path == "Left":
+        results = LeftPath()
+    elif path == "Right":
+        results = RightPath()
+    
+    # check if player wins or not
+    if results == False:
+        PythonUI.ClearTerm()
+        PythonUI.PrintTerm("Death Screen")
+        return 
+    
+    PythonUI.ClearTerm()
+    PythonUI.PrintTerm("Eventually the path came together and that path leaded up to Le'mans\n +300 Coins, +20 Food, +30 Representation, +10 Iron ")
 
 # endregion Caravan Guard
