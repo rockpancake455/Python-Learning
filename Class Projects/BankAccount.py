@@ -65,7 +65,7 @@ class BankAccount:
 
     def RemoveCoOwner(self, coOwner: str):
         self.CoOwners.remove(coOwner)
-
+ 
     @property
     def FormattedBalance(self):
         return "${:.2f}".format(self.Balance)
